@@ -1,10 +1,10 @@
-import {
-  StyleSheet,
-} from 'react-native';
+var React = require('react-native')
+var {StyleSheet} = React
 
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   swipeout: {
     backgroundColor: '#dbddde',
+    flex: 1,
     overflow: 'hidden',
   },
   swipeoutBtnTouchable: {
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     top: 0,
   },
   swipeoutContent: {
+    flex: 1,
   },
   colorDelete: {
     backgroundColor: '#fb3d38',
@@ -42,4 +43,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default styles;
+module.exports = styles
